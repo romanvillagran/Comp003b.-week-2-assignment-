@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc; 
 namespace COMP003B.Assignment2.Controllers
 {
-    public class ProjectControllers : Controller
+    public class ProjectController : Controller
     {
         [HttpGet]
-        public IActionResult current()
+        public IActionResult Current()
         {
             return View();
         }

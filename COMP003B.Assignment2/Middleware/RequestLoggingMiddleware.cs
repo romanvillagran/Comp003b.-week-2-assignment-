@@ -1,4 +1,4 @@
-﻿namespace COMP003B.Assignment2.Middlewaare
+﻿namespace COMP003B.Assignment2.Middleware
 {
     public class RequestLoggingMiddleware
     {
@@ -10,7 +10,7 @@
         }
         public async Task Invoke(HttpContext context)
         {
-            Console.WriteLine($"[Request] {context.Request.Method} {context.Request.Path}");
+            Console.WriteLine($"[Request] {context.Request.Method}{context.Request.Path}");
             await _next(context);
             Console.WriteLine($"[Response] {context.Response.StatusCode}");
         }
