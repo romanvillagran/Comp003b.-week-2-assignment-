@@ -1,8 +1,9 @@
 ﻿
 @{
-    ViewData["Title"] = "";
+    ViewData["Title"] = "Completed";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <partial name="_Navigation"/>
 <h2>Completed projects</h2>
 <p>A project that i have completed recently was writing a short essay on how to use Linux</p>
+@await Html.PartialAsync("_Sidebar")

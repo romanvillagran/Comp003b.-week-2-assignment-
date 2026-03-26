@@ -1,8 +1,9 @@
 ﻿
 @{
-    ViewData["Title"] = "";
+    ViewData["Title"] = "ideas";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <partial name="_Navigation" />
-<h2>Future ideas</h2>
+<h2>@ViewData["Title"]</h2>
 <p>I want to change the screen on my laptop from ips to oled</p>
+@await Html.PartialAsync("_Sidebar")
