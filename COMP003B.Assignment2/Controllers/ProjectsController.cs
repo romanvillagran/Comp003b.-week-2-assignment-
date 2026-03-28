@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc; 
 namespace COMP003B.Assignment2.Controllers
 {
-    public class ProjectController : Controller
+    public class ProjectsController : Controller
     {
         [HttpGet]
         public IActionResult Current()
